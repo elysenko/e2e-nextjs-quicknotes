@@ -14,7 +14,7 @@ ENV NEXT_PUBLIC_BASE_PATH=$NEXT_PUBLIC_BASE_PATH
 ENV DATABASE_URL=postgresql://x:x@localhost:5432/x
 COPY package*.json ./
 RUN --mount=type=cache,target=/root/.npm \
-    npm ci
+    npm install --no-audit --no-fund
 COPY . .
 RUN npx prisma generate
 RUN npm run build
