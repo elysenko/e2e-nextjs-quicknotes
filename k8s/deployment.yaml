@@ -9,7 +9,8 @@ metadata:
 spec:
   replicas: 1
   # Recreate (NOT the default RollingUpdate): the per-project namespace has a hard
-  # memory ResourceQuota. Kill-before-create avoids the 2x-quota spike.
+  # memory ResourceQuota. A RollingUpdate creates the new pod before terminating the
+  # old one, transiently needing 2x the pod's memory — which the quota denies.
   strategy:
     type: Recreate
   selector:
@@ -28,8 +29,6 @@ spec:
         - name: app
           image: ubuntu:30500/e2e-nextjs-quicknotes:latest
           imagePullPolicy: Always
-          ports:
-            - containerPort: 3000
           envFrom:
             - secretRef:
                 name: app-secrets
