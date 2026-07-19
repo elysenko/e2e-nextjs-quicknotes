@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: colossus-e2e-nextjs-quicknotes
+resources:
+  - k8s/deployment.yaml
+  - k8s/service.yaml
+  - k8s/ingress.yaml
+images:
+  - name: ubuntu:30500/e2e-nextjs-quicknotes
+    digest: sha256:3878bc85973a8cd2689e1c514cb5df01e3f4210d5a950207b50719ca60dd91bc
+# Redeploy:  kubectl apply -k . (re-applies this exact image)
+# Rebuild:   re-trigger the deploy pipeline for branch main in Colossus
