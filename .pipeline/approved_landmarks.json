@@ -1,0 +1,43 @@
+{
+  "testids": [
+    "admin-settings",
+    "config-banner",
+    "home-main",
+    "home-title",
+    "login-card",
+    "login-error",
+    "logout",
+    "logout-mobile",
+    "new-note-link",
+    "new-note-page",
+    "note-card",
+    "note-detail",
+    "note-error",
+    "note-not-found",
+    "notes-list",
+    "notes-page",
+    "save-note",
+    "service-",
+    "service-minio",
+    "service-postgresql",
+    "signup-card",
+    "signup-error"
+  ],
+  "headings": [
+    "404",
+    "Admin settings",
+    "Create your account",
+    "Grocery run",
+    "Idea: weekly review ritual",
+    "New note",
+    "Q3 planning kickoff",
+    "Reading list",
+    "This page could not be found.",
+    "Trip to Lisbon",
+    "Welcome back",
+    "Welcome to QuickNotes",
+    "Your notes",
+    "Your notes, fast and private."
+  ],
+  "source_dir": "/workspace/mockups/081d9ef3-865f-4c76-90b9-9819a7465d7d"
+}
