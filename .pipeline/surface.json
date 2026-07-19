@@ -1,0 +1,14 @@
+{
+  "_generated": true,
+  "_note": "This file is overwritten by the scaffolder agent. Do not edit manually.",
+  "routes": [
+    { "method": "GET", "path": "/api/health" }
+  ],
+  "components": [
+    { "selector": "Home", "file": "app/page.tsx" }
+  ],
+  "testIds": [
+    { "id": "home-main", "element": "main", "component": "Home" },
+    { "id": "home-title", "element": "h1", "component": "Home" }
+  ]
+}
